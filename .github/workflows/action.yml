@@ -21,3 +21,11 @@ jobs:
           # This defaults to false if not specified.
           # See https://github.com/necojackarc/auto-request-review/issues/76 for more details.
           # use_local: true
+  add-reviews:
+    name: Auto Request Assignee
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.2.4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          configuration-path: '.github/auto_assigns.yml'
