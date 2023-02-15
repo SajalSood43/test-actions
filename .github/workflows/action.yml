@@ -3,6 +3,7 @@ name: Auto Request Review
 on:
   pull_request:
     types: [opened, ready_for_review, reopened]
+    branches: [main]
 
 jobs:
   auto-request-review:
@@ -13,7 +14,7 @@ jobs:
         uses: necojackarc/auto-request-review@v0.10.0
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          config: .github/auto_assign.yml # Config file location override
+          config: .github/workflows/auto_assign.yml # Config file location override
           # Look for config locally during run instead of in repo.
           # For instance, if you'd like to use a config file stored in external storage,
           # you can fetch it before you run this action, then let this action pick it up with `use_local: true`.
