@@ -3,8 +3,9 @@ addAssignees: true
 # A list of assignees, overrides reviewers if set
 assignees:
   - SajalSood43
+  - Prakhar824
 
 # A number of assignees to add to the pull request
 # Set to 0 to add all of the assignees.
 # Uses numberOfReviewers if unset.
-numberOfAssignees: 1
+numberOfAssignees: 0
