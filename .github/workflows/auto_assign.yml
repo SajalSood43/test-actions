@@ -4,3 +4,6 @@ reviewers:
     - SajalSood43
     - Prakhar824
    # - Priyansh19
+assignees:
+  defaults:
+    - Priyansh19
